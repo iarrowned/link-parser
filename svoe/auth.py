@@ -6,7 +6,7 @@ def auth(session):
     csrf_token = session.get(URL).cookies['csrftoken']  # -- Получаем csrf-token      # --
     data = {
         'csrfmiddlewaretoken': csrf_token,
-        'login': 'kuznetsov.k.a@edu.mirea.ru',
-        'password': 'poiLkJmnb098'
+        'login': '',
+        'password': ''
     }
     session.post(URL, data=data, headers=header) # --Происходит авторизация
